@@ -12,10 +12,10 @@ ToDo:
   pip install python-dateutil
 ... или убрать форматирование даты ... dup.parse(task['dateLastActivity']).strftime("%d.%m.%Y %H:%M:%S")
 
-Данные авторизации в Trello  
+Данные авторизации в Trello:  
   {'key': "414d13a43ea879c2f26c593e26a2fd3d", 'token': "36dfb3c022ef0c912bbcf7b895531a1dfd735efe66f93c6f51f910396fc1a841"}  
 
-Доска
+Доска https://trello.com/b/Fx11R3X9/created-with-trelloapi:
   {'id': '5ed3993eb091f30d88e84582', 'name': 'Created with TrelloApi'}
 
 Методы Trello-CRU-client:

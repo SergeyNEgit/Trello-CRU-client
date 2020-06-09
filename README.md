@@ -1,16 +1,12 @@
 Trello-CRU-client 
 
 SkillFactory D1.10 HW Trello console CRU (Create-Read-Update) client
-ToDo:
-  1. Добавьте рядом с названием колонки цифру, отражающую количество задач в ней.
-  2. Реализуйте создание колонок.
-  3. Обработайте совпадающие имена задач *
-
 
 Важно! 
-Требуется установить пакет работы с datetime  
+Требуется установить пакет работы с datetime:  
   pip install python-dateutil
-... или убрать форматирование даты ... dup.parse(task['dateLastActivity']).strftime("%d.%m.%Y %H:%M:%S")
+или убрать форматирование даты: 
+... dup.parse(task['dateLastActivity']).strftime("%d.%m.%Y %H:%M:%S")
 
 Данные авторизации в Trello:  
   {'key': "414d13a43ea879c2f26c593e26a2fd3d", 'token': "36dfb3c022ef0c912bbcf7b895531a1dfd735efe66f93c6f51f910396fc1a841"}  

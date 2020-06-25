@@ -20,7 +20,7 @@ python D1-10-HW-trello-CRU-client.py list column_name
 - создание колонки column_name
 
 python D1-10-HW-trello-CRU-client.py [read] 
-- список задач по колонкам 
+- список задач по колонкам, с указанием id задачи 
 
 python D1-10-HW-trello-CRU-client.py create task_name column_name 
 - создание задачи task_name в колонке column_name 

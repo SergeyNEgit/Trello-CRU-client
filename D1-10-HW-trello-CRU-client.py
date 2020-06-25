@@ -40,7 +40,7 @@ def read():
             print('\t' + 'Нет задач!')      
             continue      
         for task in task_data:      
-            print('\t' + task['name'])  
+            print( '\t {n}, id: {i}'.format(n=task['name'], i=task['id']) )
 
 # создание колонки|list по имени column_name
 def list_(column_name):      
@@ -94,7 +94,7 @@ def move(name, column_name):
         while True:
             for task in tasks:
                 ind = tasks.index(task) + 1
-                print( '{i}. \"{t}\" - Список: \"{c}\" LastActivity: {d}'.format( i = ind, t = task['name'], c = task['column'], d = dup.parse(task['dateLastActivity']).strftime("%d.%m.%Y %H:%M:%S") ) )
+                print( '{i}. \"{t}\" - Список: \"{c}\" LastActivity: {d}  id: {id}'.format( i = ind, t = task['name'], c = task['column'], d = dup.parse(task['dateLastActivity']).strftime("%d.%m.%Y %H:%M:%S"), id=task['id'] ) )
             ind = int(input('Укажите № задачи: '))
             if ind > 0 and ind <= len(tasks):
                 task_id = tasks[ind-1]['id']

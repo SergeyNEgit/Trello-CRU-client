@@ -38,9 +38,12 @@ def read():
         print(column['name'], len(task_data))    
         if not task_data:      
             print('\t' + 'Нет задач!')      
-            continue      
-        for task in task_data:      
-            print( '\t {n}, id: {i}'.format(n=task['name'], i=task['id']) )
+            continue
+
+        ind = 0
+        for task in task_data:
+            ind += 1      
+            print( '\t {i}. {n}, id: {id}'.format(i=ind, n=task['name'], id=task['id']) )
 
 # создание колонки|list по имени column_name
 def list_(column_name):      
